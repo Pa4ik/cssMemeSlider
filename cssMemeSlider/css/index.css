@@ -137,6 +137,7 @@ font-family: 'Inter', sans-serif; */
     background-color: blueviolet;
     display: grid;
     align-items: center;
+    
 } 
 
 .rs-school-github-link{
@@ -159,4 +160,26 @@ font-family: 'Inter', sans-serif; */
 
 
 
+@media (max-width: 780px) {
+    .text-btn-pegination {
+        flex-direction: column-reverse;
+    }
 
+    .left-conteiner {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .right-container {
+           display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .btn-pegination-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1vh;
+    }
+}
