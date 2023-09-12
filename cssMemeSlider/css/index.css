@@ -43,9 +43,10 @@ font-family: 'Inter', sans-serif; */
 
 .swiper{ 
     max-width: 110vh;
+    width: 100%;
+    margin: 2em;
     display: flex;
     flex-direction: column;
-    margin: 2em;
     justify-content: center;
 }
 
@@ -60,11 +61,17 @@ font-family: 'Inter', sans-serif; */
 .slider-img{
     display: flex;
     align-items: center;
+    margin-bottom: 2vh;
 }
 
      .slider{
         max-width: 140vh;
         object-fit: cover
+     }
+
+     .slider-size{
+        padding: 2vh 2vh;
+
      }
 
 .size-img{
@@ -93,12 +100,33 @@ font-family: 'Inter', sans-serif; */
     width: 100%;
     flex-shrink: 0;
     font-family: 'Inter', sans-serif; 
+    font-size: 1.7em;
 }
 
+.right-container{
+    display: grid;
+    align-items: center;
+    width: 30%;
+}
 
+.btn-pegination-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 
+.btn-pegination{
+    padding: 0.5vh;
+    cursor: pointer;
+    margin: 0.2vh;
+}
 
-
+.pegination{
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    border-radius: 50%;
+}
 
 
 
