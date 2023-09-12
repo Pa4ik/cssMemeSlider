@@ -1,6 +1,8 @@
 /* font-family: 'Forum', cursive;
 font-family: 'Inter', sans-serif; */
-
+body{
+    background-color: blueviolet;  
+}
 
 .header{
     height: 10vh;
@@ -10,7 +12,7 @@ font-family: 'Inter', sans-serif; */
 .main{
     display: flex;
     justify-content: space-evenly;
-    background-color: aqua;
+    background-color: rgb(161, 89, 230);
     height: 80vh;
 }
 
@@ -124,8 +126,13 @@ font-family: 'Inter', sans-serif; */
 .pegination{
     width: 1em;
     height: 1em;
-    background-color: red;
+    background-color: #590505;
     border-radius: 50%;
+    transition: all 0.3s ;
+}
+
+.pegination:hover{
+  background-color: #f87b7b;
 }
 
 
