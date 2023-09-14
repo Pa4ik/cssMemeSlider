@@ -117,14 +117,14 @@ body{
     width: 1em;
     height: 1em;
     background-color: #590505;
-    border: #590505 2px solid;
+    border: #590505 0.4vh solid;
     border-radius: 50%;
     transition: all 0.3s ;
 }
 
 .pegination:hover{
   background-color: #f87b7b;
-  border: black 2px solid;
+  border: black 0.4vh solid;
 }
 
 
