@@ -209,8 +209,12 @@ body{
         width: 100%;
         padding: 1vh;
     }
-}
 
+    .error{
+     opacity: 0;
+    }
+    
+}
 
 
 
