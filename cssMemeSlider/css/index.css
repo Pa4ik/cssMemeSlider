@@ -1,0 +1,221 @@
+/* font-family: 'Forum', cursive;
+font-family: 'Inter', sans-serif; */
+body{
+    background-color: blueviolet;  
+}
+
+.header{
+    height: 10vh;
+    background-color: blueviolet;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(161, 89, 230);
+    height: 80vh;
+}
+
+
+
+.header-div{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2vh;
+    gap: 2vh;
+}
+
+.icon-size{
+    width: 8vh;
+}
+
+.h2-size{
+    font-size: 3vh;
+}
+
+ 
+
+.swiper{ 
+    max-width: 110vh;
+    width: 100%;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-pegination{
+    display: none;
+}
+
+.slider-image{
+    overflow: hidden;
+}
+
+.slider-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    transition: all 0.6s ease-out;
+}
+
+.slider-size{
+    padding: 2vh 2vh;
+}
+
+.size-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text-btn-pegination{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-conteiner{
+    width: 70%;
+    overflow: hidden;
+}
+
+.text-mem-conteiner {
+    display: flex;
+    align-items: center;
+    transition: all 0.6s ease-out;
+}
+
+.text-mem {
+    width: 100%;
+    flex-shrink: 0;
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.7em;
+}
+
+.right-container{
+    display: grid;
+    align-items: center;
+    width: 30%;
+}
+
+.btn-pegination-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn-pegination{
+    padding: 0.5vh;
+    cursor: pointer;
+    margin: 0.2vh;
+}
+
+.pegination{
+    width: 1em;
+    height: 1em;
+    background-color: #590505;
+    border: #590505 0.4vh solid;
+    border-radius: 50%;
+    transition: all 0.3s ;
+}
+
+.pegination:hover{
+  background-color: #f87b7b;
+  border: black 0.4vh solid;
+}
+
+
+
+#slide1:checked~.slider-size>.slider-image>.slider-img,
+#slide1:checked~.text-btn-pegination>.left-conteiner>.text-mem-conteiner{
+    transform: translateX(0);
+}
+
+#slide2:checked~.slider-size>.slider-image>.slider-img,
+#slide2:checked~.slider-size>.text-btn-pegination>.left-conteiner>.text-mem-conteiner{
+    transform: translateX(-100%);
+}
+
+#slide3:checked~.slider-size>.slider-image>.slider-img,
+#slide3:checked~.slider-size>.text-btn-pegination>.left-conteiner>.text-mem-conteiner{
+    transform: translateX(-200%);
+}
+
+#slide4:checked~.slider-size>.slider-image>.slider-img,
+#slide4:checked~.slider-size>.text-btn-pegination>.left-conteiner>.text-mem-conteiner{
+    transform: translateX(-300%);
+}
+
+#slide5:checked~.slider-size>.slider-image>.slider-img,
+#slide5:checked~.slider-size>.text-btn-pegination>.left-conteiner>.text-mem-conteiner{
+    transform: translateX(-400%);
+}
+
+#slide1:checked~.slider-size>.text-btn-pegination>.right-container>.btn-pegination-container>.btn-pegination:nth-of-type(1)>.pegination,
+#slide2:checked~.slider-size>.text-btn-pegination>.right-container>.btn-pegination-container>.btn-pegination:nth-of-type(2)>.pegination,
+#slide3:checked~.slider-size>.text-btn-pegination>.right-container>.btn-pegination-container>.btn-pegination:nth-of-type(3)>.pegination,
+#slide4:checked~.slider-size>.text-btn-pegination>.right-container>.btn-pegination-container>.btn-pegination:nth-of-type(4)>.pegination,
+#slide5:checked~.slider-size>.text-btn-pegination>.right-container>.btn-pegination-container>.btn-pegination:nth-of-type(5)>.pegination{
+    background-color: #f87b7b;
+}
+
+
+
+.footer-div{
+    height: 10vh;
+    background-color: blueviolet;
+    display: grid;
+    align-items: center; 
+} 
+
+.rs-school-github-link{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2vh;
+    padding: 2vh;
+    flex-wrap: wrap;
+}
+
+.link:hover{
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 780px) {
+    .text-btn-pegination {
+        flex-direction: column-reverse;
+    }
+
+    .left-conteiner {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .right-container {
+           display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .btn-pegination-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1vh;
+    }
+
+    .error{
+     opacity: 0;
+    }
+    
+}
+
+
+
+
